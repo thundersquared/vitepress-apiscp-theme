@@ -1,0 +1,71 @@
+{
+  "name": "@apiscp/vitepress-theme",
+  "version": "1.0.0",
+  "description": "The VitePress theme for notes.apiscp.com.",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./config": "./src/config.js"
+  },
+  "files": [
+    "src",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thundersquared/vitepress-apiscp-theme.git"
+  },
+  "keywords": [
+    "vue",
+    "vite",
+    "apiscp",
+    "thundersquared",
+    "design-system"
+  ],
+  "author": {
+    "name": "Anatoli Nicolae",
+    "email": "opensource@thundersquared.com",
+    "url": "https://thundersquared.com/"
+  },
+  "license": "MIT",
+  "homepage": "https://theme.apiscp.com",
+  "bugs": {
+    "url": "https://github.com/thundersquared/vitepress-apiscp-theme/issues"
+  },
+  "scripts": {
+    "lint": "prettier --check --write --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
+    "type": "tsc --noEmit",
+    "test": "npm run lint && npm run type",
+    "dev": "vitepress dev demo",
+    "demo-build": "vitepress build demo",
+    "serve": "npm run demo-build && vitepress serve demo"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@vueuse/core": "^9.13.0"
+  },
+  "devDependencies": {
+    "@mdit-vue/types": "^0.11.0",
+    "@types/body-scroll-lock": "^3.1.0",
+    "@types/estree": "^1.0.1",
+    "@types/node": "^18.16.19",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.5",
+    "vitepress": "1.0.0-beta.3",
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.0.0-beta.3"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}
