@@ -1,7 +1,7 @@
 # ApisCP VitePress Theme
 
 This is the [VitePress](https://vitepress.vuejs.org/) theme for the
-documentation at [notes.apiscp.com](notes.apiscp.com).
+documentation at [notes.apiscp.com](https://notes.apiscp.com/).
 
 ## Development Setup
 
