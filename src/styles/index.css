@@ -84,3 +84,10 @@ html.dark {
 .vp-doc a[target="_blank"]::after {
   content: " ↗";
 }
+
+html,
+body {
+  shape-rendering: crispedges;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
