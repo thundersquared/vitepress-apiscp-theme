@@ -1,6 +1,6 @@
 {
   "name": "@apiscp/vitepress-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The VitePress theme for notes.apiscp.com.",
   "main": "src/index.ts",
   "exports": {
