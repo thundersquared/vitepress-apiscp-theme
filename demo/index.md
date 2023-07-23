@@ -110,7 +110,7 @@ Warning raises a warning to watch out for `python`
   Here is a card with a duotone yellow icon
 </Card>
 
-<CardGroup cols="2">
+<CardGroup :cols="2">
   <Card title="First Card" icon="envelope" color="#ea5a0c" href="#">
     Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
   </Card>

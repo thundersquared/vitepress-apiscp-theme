@@ -19,13 +19,13 @@ const tag = computed(() => props.href ? 'a' : 'div')
             <FontAwesomeIcon :icon="props.icon"></FontAwesomeIcon>
         </div>
         <h3 class="card-title">{{ props.title }}</h3>
-        <span class="card-body">
+        <div class="card-body">
             <slot></slot>
-        </span>
+        </div>
     </component>
 </template>
 
-<style scoped>
+<style>
 .card {
     --vp-c-brand: initial;
     border: 1px solid var(--vp-custom-block-info-border);

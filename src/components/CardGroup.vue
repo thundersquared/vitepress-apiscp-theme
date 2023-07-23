@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-defineProps<{
+defineProps({
     cols: {
-        type: number,
+        type: Number,
         default: 2,
         required: false
     }
-}>()
+})
 </script>
 
 <template>
