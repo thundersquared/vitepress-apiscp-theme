@@ -8,7 +8,7 @@ const props = defineProps<{
 }>()
 
 const icons: { [key: string]: string } = {
-    'info': 'circle-exclamation',
+    'info': 'circle-info',
     'note': 'circle-exclamation',
     'warning': 'triangle-exclamation',
     'tip': 'lightbulb',
