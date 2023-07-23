@@ -69,6 +69,11 @@ const icon = computed(() => icons[props.level])
     margin-bottom: 0;
 }
 
+.callout .callout-body a,
+.callout .callout-body code {
+    color: inherit;
+}
+
 .callout.info {
     background-color: var(--vp-custom-block-info-bg);
     color: var(--vp-custom-block-info-text);
