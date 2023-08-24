@@ -21,9 +21,11 @@ const icon = computed(() => icons[props.level])
 
 <template>
     <div :class="['callout', level]">
-        <div class="callout-icon" v-if="level">
-            <FontAwesomeIcon :icon="icon"></FontAwesomeIcon>
-        </div>
+        <ClientOnly>
+            <div class="callout-icon" v-if="level">
+                <FontAwesomeIcon :icon="icon"></FontAwesomeIcon>
+            </div>
+        </ClientOnly>
         <div class="callout-body">
             <h3 class="callout-title" v-if="props.title">{{ props.title }}</h3>
             <slot></slot>
@@ -61,11 +63,11 @@ const icon = computed(() => icons[props.level])
     line-height: 1.75rem;
 }
 
-.callout .callout-body > p:first-of-type {
+.callout .callout-body>p:first-of-type {
     margin-top: 0;
 }
 
-.callout .callout-body > p:last-of-type {
+.callout .callout-body>p:last-of-type {
     margin-bottom: 0;
 }
 

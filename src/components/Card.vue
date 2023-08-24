@@ -15,9 +15,11 @@ const tag = computed(() => props.href ? 'a' : 'div')
 
 <template>
     <component :is="tag" class="card" :class="{ link: props.href }" :href="props.href || undefined">
-        <div v-if="props.icon" class="card-icon">
-            <FontAwesomeIcon :icon="props.icon"></FontAwesomeIcon>
-        </div>
+        <ClientOnly>
+            <div v-if="props.icon" class="card-icon">
+                <FontAwesomeIcon :icon="props.icon"></FontAwesomeIcon>
+            </div>
+        </ClientOnly>
         <h3 class="card-title">{{ props.title }}</h3>
         <div class="card-body">
             <slot></slot>
@@ -45,11 +47,11 @@ const tag = computed(() => props.href ? 'a' : 'div')
     height: 1.25rem;
 }
 
-.card .card-body > p:first-of-type {
+.card .card-body>p:first-of-type {
     margin-top: 0;
 }
 
-.card .card-body > p:last-of-type {
+.card .card-body>p:last-of-type {
     margin-bottom: 0;
 }
 
