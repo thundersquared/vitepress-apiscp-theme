@@ -1,7 +1,9 @@
 @import './variables.css';
 
 :root {
-  --vp-c-brand: hsl(170, 75%, 35%);
+  --vp-c-brand-1: hsl(170, 75%, 34.5%);
+  --vp-c-brand-2: hsl(170.32, 74.4%, 24.51%);
+  --vp-c-brand-3: hsl(90, 41.18%, 93.33%);
   --vp-c-brand-light: hsl(170, 75%, 50%);
   --vp-c-brand-lighter: hsl(170, 75%, 75%);
   --vp-c-brand-lightest: hsl(170, 75%, 95%);
@@ -9,7 +11,7 @@
   --vp-c-brand-darker: hsl(170, 75%, 20%);
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
 
-  --vp-code-block-bg: hsl(170, 15%, 9%);
+  --vp-code-block-bg: hsl(170, 15%, 96%);
 
   --vp-custom-block-info-border: rgba(113, 113, 122, 0.2);
   --vp-custom-block-info-text: rgb(55, 65, 81);

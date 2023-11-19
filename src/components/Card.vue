@@ -29,7 +29,7 @@ const tag = computed(() => props.href ? 'a' : 'div')
 
 <style>
 .card {
-    --vp-c-brand: initial;
+    --vp-c-brand-1: initial;
     border: 1px solid var(--vp-custom-block-info-border);
     padding: 1rem;
     margin-top: 0.5rem;
@@ -55,7 +55,12 @@ const tag = computed(() => props.href ? 'a' : 'div')
     margin-bottom: 0;
 }
 
+a.card {
+    text-decoration: none;
+}
+
 a.card:hover {
+    color: v-bind('props.color');
     border-color: v-bind('props.color');
     text-decoration: none;
 }
