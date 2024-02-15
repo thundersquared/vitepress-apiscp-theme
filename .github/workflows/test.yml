@@ -1,4 +1,4 @@
-name: test
+name: Test Build
 
 on: [push]
 
@@ -6,8 +6,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: install and test
-        run: |
-          yarn install
-          yarn demo-build
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+          scope: "@apiscp"
+      - run: yarn install
+      - run: yarn demo-build
