@@ -1,6 +1,6 @@
 {
   "name": "@apiscp/vitepress-theme",
-  "version": "1.0.8",
+  "version": "1.0.8.1",
   "description": "The VitePress theme for notes.apiscp.com.",
   "main": "src/index.ts",
   "exports": {
@@ -42,24 +42,24 @@
     "serve": "npm run demo-build && vitepress serve demo"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-regular-svg-icons": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/vue-fontawesome": "^3.0.5",
-    "@vueuse/core": "^10.6.1"
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@vueuse/core": "^10.7.2"
   },
   "devDependencies": {
-    "@mdit-vue/types": "^1.0.0",
+    "@mdit-vue/types": "^2.0.0",
     "@types/body-scroll-lock": "^3.1.2",
     "@types/estree": "^1.0.5",
-    "@types/node": "^20.9.2",
-    "prettier": "^3.1.0",
-    "typescript": "^5.2.2",
-    "vitepress": "1.0.0-rc.29",
-    "vue": "^3.3.8"
+    "@types/node": "^20.11.17",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vitepress": "1.0.0-rc.42",
+    "vue": "^3.4.19"
   },
   "peerDependencies": {
-    "vitepress": "^1.0.0-beta.3"
+    "vitepress": "^1.0.0-rc.42"
   },
   "pnpm": {
     "peerDependencyRules": {
